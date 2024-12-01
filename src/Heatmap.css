@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9; 
+    color: #333;
+  }
+  
+  .heatmap-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .month-heatmap {
+    text-align: center;
+    background-color: black; 
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .month-heatmap h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .react-calendar-heatmap .color-empty {
+    fill: #eeeeee;
+  }
+  
+  .react-calendar-heatmap .color-scale-1 {
+    fill: #d4f0e8;
+  }
+  
+  .react-calendar-heatmap .color-scale-2 {
+    fill: #a4d4b7;
+  }
+  
+  .react-calendar-heatmap .color-scale-3 {
+    fill: #69b38c;
+  }
+  
+  .react-calendar-heatmap .color-scale-4 {
+    fill: #38a169;
+  }
+  
+  /* Tooltip styling */
+  .react-calendar-heatmap .react-calendar-heatmap__tooltip {
+    pointer-events: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .react-calendar-heatmap text {
+    display: none !important;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 1024px) {
+    .heatmap-grid {
+      grid-template-columns: repeat(4, 1fr); /* 2 months per column on medium screens */
+    }
+  
+    .month-heatmap h2 {
+      font-size: 1.3em;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heatmap-grid {
+      grid-template-columns: repeat(2, 1fr); /* Single column layout for smaller screens */
+      gap: 15px;
+    }
+  
+    .month-heatmap {
+      padding: 15px;
+    }
+  
+    .month-heatmap h2 {
+      font-size: 1.2em;
+    }
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .month-heatmap {
+      padding: 10px;
+    }
+  
+    .month-heatmap h2 {
+      font-size: 1em;
+    }
+  
+    h1 {
+      font-size: 1.4em;
+    }
+  }
+  

@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+.color-empty {
+  fill: #eeeeee;
+}
+.color-scale-1 {
+  fill: #d4f0e8;
+}
+.color-scale-2 {
+  fill: #a4d4b7;
+}
+.color-scale-3 {
+  fill: #69b38c;
+}
+.color-scale-4 {
+  fill: #38a169;
+}
