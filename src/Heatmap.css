@@ -77,7 +77,7 @@ body {
   /* Responsiveness */
   @media (max-width: 1024px) {
     .heatmap-grid {
-      grid-template-columns: repeat(4, 1fr); /* 2 months per column on medium screens */
+      grid-template-columns: repeat(4, 1fr); /* 4 months per column on medium screens */
     }
   
     .month-heatmap h2 {
@@ -91,7 +91,7 @@ body {
   
   @media (max-width: 768px) {
     .heatmap-grid {
-      grid-template-columns: repeat(2, 1fr); /* Single column layout for smaller screens */
+      grid-template-columns: repeat(2, 1fr); /* 2 column layout for smaller screens */
       gap: 15px;
     }
   
